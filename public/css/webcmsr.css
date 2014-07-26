@@ -1,0 +1,69 @@
+form#login-form {
+  padding-right: 10px;
+}
+
+.cs-main {
+  background: #202077 !important;
+  color: white !important;
+}
+
+#page {
+  height: 100% !important;
+}
+
+#page-info {
+  margin-bottom: 30px;
+}
+
+.center-table {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.pagination {
+  margin: 0px !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a#open-icon-header {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 4px 7px;
+  z-index: 99999;
+}
+
+@media all and (min-width: 480px) {
+  a#open-icon-header {
+    display: none;
+  }
+}
+
+.help-block {
+  color: green;
+}
+
+#menu-outer .row {
+  margin-bottom: 10px;
+}
+
+.menu-inner {
+  background-color: pink;
+  padding: 15px 0px 5px;
+}
+
+.menu-inner > li {
+  padding: 0px 15px;
+}
+
+.menu-inner .row {
+  padding-left: 30px;
+}

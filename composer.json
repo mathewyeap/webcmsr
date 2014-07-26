@@ -1,0 +1,66 @@
+{
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"license": "MIT",
+	"repositories": [
+		{
+		    "type": "vcs",
+		    "url": "https://github.com/mpye665/bootforms"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/mpye665/form"
+		}
+	],
+	"require": {
+		"laravel/framework": "4.2.*",
+		"laravelbook/ardent": "dev-master",
+		"chumper/datatable": "2.*",
+        "mccool/laravel-auto-presenter": "1.0.0",
+        "mpye665/form": "dev-master",
+        "mpye665/bootforms": "dev-master",
+        "jschr/bootstrap-modal": "dev-master"
+	},
+	"require-dev": {
+		"digitalnature/php-ref" : "dev-master",
+		"panique/laravel-sass": "dev-master",
+		"itsgoingd/clockwork": "1.*"
+	},
+	"autoload": {
+		"files": [
+			"app/helpers.php"
+		],
+		"psr-0": {
+			"WebCMS": "app"
+		},
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php",
+			"app/libraries",
+			"app/presenters",
+			"app/exceptions"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-update-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "stable"
+}

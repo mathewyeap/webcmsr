@@ -1,0 +1,59 @@
+$mm_width: 0.8 !default;
+$mm_minWidth: 140px !default;
+$mm_maxWidth: 440px !default;
+
+$mm_btnSize: 20px !default;
+$mm_padding: 3px !default;
+$mm_fontSize: 13px !default;
+
+@import "jquery.mmenu.all";
+
+@import "mmenu/extensions/jquery.mmenu.widescreen";
+
+@media all and (max-width:767px)
+{
+	.mm-page
+	{
+		width: 70% !important;
+		left: 30% !important;
+	}
+	.mm-menu
+	{
+		width: 30% !important;
+	}
+}
+@media all and (min-width:768px) and (max-width:991px)
+{
+	.mm-page
+	{
+		width: 75% !important;
+		left: 25% !important;
+	}
+	.mm-menu
+	{
+		width: 25% !important;
+	}
+}
+@media all and (min-width:992px)
+{
+	.mm-page
+	{
+		width: 85% !important;
+		left: 15% !important;
+	}
+	.mm-menu
+	{
+		width: 15% !important;
+	}
+}
+
+.mm-list a.mm-subopen:after, .mm-menu.mm-vertical .mm-list > li.mm-opened > a.mm-subopen:after
+{
+	top: 6px;
+ 	right: 7px;
+}
+
+.mm-page
+{
+	height: 100% !important;
+}
